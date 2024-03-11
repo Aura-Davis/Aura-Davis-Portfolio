@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aura Davis Software Engineer {% block title %}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#home" class="navbar2"><b>Aura Davis Software Engineer</b></a>
+        <div class="navbar1">
+            {% block navbar %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header" id="home">
+        <div class="header_text">Portfolio</div>
+        <img class="header_img" src="{{ url_for('static', filename='images/header.jpg')}}" alt="header">
+    </div>
+
+    <!-- Page content -->
+    <div class="page_content" style="max-width:1564px">
+
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+    {% block title %}Home{% endblock %}
+
+<!-- Navbar -->
+    {% block navbar %}
+<a class="navbar2" href="#projects">Projects</a>
+<a class="navbar2" href="#education">Education</a>
+<a class="navbar2" href="#profiles">Profiles</a>
+    {% endblock %}
+
+<!-- Page content -->
+{% block content %}
+
+    <!-- Project Section -->
+    <div id="projects">
+        <h3>Projects</h3>
+    </div>
+
+    <div class="projects">
+        <a style="text-decoration: none" href="Employee_Management_System">
+            <div class="project_card">
+                <div class="project_card_title">Employment Management System</div>
+                <div class="project_card_body">Software created using C++ and MySQL that allows you to create/delete employees and log their work hours</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Education -->
+    <div id="education">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Education</h3>
+        <p>
+            San Francisco State University
+            Bacherlors of Science in Computer Science
+        </p>
+    </div>
+
+    <!-- Skills -->
+    <h3>Skills</h3>
+    <div id="skills" class="skills">
+
+        <div class="skills_category">
+            <p style="font-weight: bold">Object Oriented Programming ( OOP ) :</p>
+            <div>C++</div>
+            <div>Java</div>
+            <div>Python</div>
+        </div>
+        <div class="skills_category">
+            <p style="font-weight: bold">Web Development :</p>
+            <div>JavaScript</div>
+            <div>HTML</div>
+            <div>CSS</div>
+        </div>
+        <div class="skills_category">
+            <p style="font-weight: bold">Relational Database / SQL :</p>
+            <div>MySQL</div>
+            <div>MongoDB</div>
+        </div>
+        <div class="skills_category">
+            <p style="font-weight: bold">Frameworks :</p>
+            <div>Flask</div>
+            <div>React</div>
+        </div>
+    </div>
+
+    <!-- Profiles -->
+    <div id="profiles">
+        <h3>Profiles</h3>
+        <div class="profiles">
+            <a href="https://github.com/Aura-Davis">
+                <button class="btn">
+                    <image class="btn_github" src="{{ url_for('static', filename='images/github icon.jpg')}}" alt="header" width=100% height="200"></image>
+                    <div style="margin: .5em">Github</div>
+                </button>
+            </a>
+            <a href="https://www.linkedin.com/in/aura-davis-62449b166/">
+                <button class="btn">
+                    <image class="btn_linkedin" src="{{ url_for('static', filename='images/linkedin icon.jpg')}}" alt="header" width=100% height="200"></image>
+                    <div style="margin: .5em">LinkedIn</div>
+                </button>
+            </a>
+            <div class="profiles1">
+                <p>Email: auradavis@yahoo.com</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

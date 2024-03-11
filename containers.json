@@ -1,0 +1,8 @@
+{
+  "flask": {
+    "image": ":portfolio-service.portfolio-container.2",
+    "ports": {
+      "5000": "HTTP"
+    }
+  }
+}
