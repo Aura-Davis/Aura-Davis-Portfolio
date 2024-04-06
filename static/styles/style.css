@@ -63,6 +63,8 @@ body {
 .projects {
     display: flex;
     justify-content: center;
+    justify-content: space-around;
+    margin: 2em 0em 2em 0em;
 }
 
 .project_card {
@@ -104,6 +106,7 @@ body {
 .profiles {
     display: flex;
     justify-content: space-around;
+    margin: 0em 0em 2em 0em;
 }
 
 .btn {
@@ -151,5 +154,20 @@ body {
 }
 
 .project1_text:hover {
+    color: hotpink;
+}
+
+.link-button {
+    font-weight: bold;
+    text-decoration: none;
+    color: beige;
+    margin: 0em 0em 1em 0em;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: black;
+}
+
+.link-button:hover {
     color: hotpink;
 }
