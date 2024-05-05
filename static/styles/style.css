@@ -61,10 +61,11 @@ body {
 }
 
 .projects {
-    display: flex;
+    display: grid;
     justify-content: center;
-    justify-content: space-around;
-    margin: 2em 0em 2em 0em;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 3em;
 }
 
 .project_card {
@@ -76,6 +77,7 @@ body {
     border-width: .2em;
     border-color: black;
     color: #ffe4c4;
+    margin-bottom: 2em;
 }
 
 .project_card:hover {
@@ -94,8 +96,11 @@ body {
 }
 
 .skills {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 3em;
 }
 
 .skills_category {
@@ -104,9 +109,11 @@ body {
 }
 
 .profiles {
-    display: flex;
-    justify-content: space-around;
-    margin: 0em 0em 2em 0em;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 3em;
 }
 
 .btn {
@@ -117,6 +124,7 @@ body {
     width: 7em;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3em;
 }
 
 .btn:hover {
@@ -170,4 +178,35 @@ body {
 
 .link-button:hover {
     color: hotpink;
+}
+
+@media(max-width:800px) {
+    .projects {
+        grid-template-columns: auto auto;
+    }
+
+    .skills {
+        grid-template-columns: auto auto;
+    }
+
+    .profiles {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width:600px) {
+    .projects {
+        grid-template-columns: auto;
+        gap: 0px;
+    }
+
+    .skills {
+        grid-template-columns: auto;
+        gap: 0px;
+    }
+
+    .profiles {
+        grid-template-columns: auto;
+        gap: 0px;
+    }
 }
