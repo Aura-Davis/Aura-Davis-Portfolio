@@ -14,3 +14,11 @@ def Employee_Management_System():
 @views.route("/Aura_Ecommerce")
 def Aura_Ecommerce():
     return render_template("Aura_Ecommerce.html")
+
+@views.route("/AI_Text_Generator")
+def AI_Text_Generator():
+    return render_template("AI_Text_Generator.html")
+
+@views.route("/Password_Manager")
+def Password_Manager():
+    return render_template("Password_Manager.html")

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}AI Text Generator{% endblock %}
+
+<!-- Navbar -->
+{% block navbar %}
+<a class="navbar2" href="../">Home</a>
+{% endblock %}
+
+<!-- Page content -->
+{% block content %}
+<h1 style="text-align:center">AI Text Generator</h1>
+<div class="project1">
+    <a class="link-button" href="https://github.com/Aura-Davis/AI-Text-Generator/">Github Link</a>
+    <div style="font-weight: bold">Description</div>
+
+    <p>
+        A Python project that uses Pandas and Tensorflow for machine learning to generate the next word based on a dataset forming a short paragraph.The AI is trained on 3,865 words 21,040 characters. It does 50 epochs over the sample data to create a relatively accurate text predictor. It then generates 50 follow up words to a start sentence.
+    </p>
+</div>
+{% endblock %}
