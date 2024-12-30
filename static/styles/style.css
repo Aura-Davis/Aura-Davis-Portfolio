@@ -2,7 +2,7 @@
 body {
     margin: 0;
     background-color: #ffe4c4;
-    font-size: 20px;
+    font-size: 30px;
     font-family: Arial, sans-serif;
 }
 
@@ -180,33 +180,39 @@ body {
     color: hotpink;
 }
 
-@media(max-width:800px) {
-    .projects {
-        grid-template-columns: auto auto;
-    }
-
-    .skills {
-        grid-template-columns: auto auto;
-    }
-
-    .profiles {
-        grid-template-columns: auto auto;
+@media(max-width:1200px) {
+    body {
+        font-size: 20px;
     }
 }
 
-@media(max-width:600px) {
-    .projects {
-        grid-template-columns: auto;
-        gap: 0px;
+    @media(max-width:800px) {
+        .projects {
+            grid-template-columns: auto auto;
+        }
+
+        .skills {
+            grid-template-columns: auto auto;
+        }
+
+        .profiles {
+            grid-template-columns: auto auto;
+        }
     }
 
-    .skills {
-        grid-template-columns: auto;
-        gap: 0px;
-    }
+    @media(max-width:600px) {
+        .projects {
+            grid-template-columns: auto;
+            gap: 0px;
+        }
 
-    .profiles {
-        grid-template-columns: auto;
-        gap: 0px;
+        .skills {
+            grid-template-columns: auto;
+            gap: 0px;
+        }
+
+        .profiles {
+            grid-template-columns: auto;
+            gap: 0px;
+        }
     }
-}
